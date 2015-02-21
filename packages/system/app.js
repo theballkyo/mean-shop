@@ -17,8 +17,13 @@ SystemPackage.register(function(app, auth, database) {
   //We enable routing. By default the Package Object is passed to the routes
   SystemPackage.routes(app, auth, database);
 
-  SystemPackage.aggregateAsset('css', 'common.css');
+  //SystemPackage.aggregateAsset('css', 'common.css');
   SystemPackage.angularDependencies(['ui.router', 'mean-factory-interceptor']);
+
+  SystemPackage.aggregateAsset('js', 'bootstrap.min.js');
+  SystemPackage.aggregateAsset('js', 'jquery.scrollUp.min.js');
+  SystemPackage.aggregateAsset('js', 'price-range.js');
+  SystemPackage.aggregateAsset('js', 'jquery.prettyPhoto.js');
 
   // The middleware in config/express will run before this code
 

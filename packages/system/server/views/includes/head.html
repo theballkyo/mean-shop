@@ -17,12 +17,17 @@
   <meta property="og:site_name" content="MEAN - A Modern Stack">
   <meta property="fb:admins" content="APP_ADMIN">
 
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
-
   {% for file in aggregatedassets.header.css %}
     <link rel="stylesheet" href="{{file}}">
   {% endfor %}
-
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link href="/system/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/system/assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/system/assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="/system/assets/css/price-range.css" rel="stylesheet">
+  <link href="/system/assets/css/animate.css" rel="stylesheet">
+  <link href="/system/assets/css/main.css" rel="stylesheet">
+  <link href="/system/assets/css/responsive.css" rel="stylesheet">
   {% for file in aggregatedassets.footer.css %}
     <link rel="stylesheet" href="{{file}}">
   {% endfor %}
@@ -30,7 +35,6 @@
   {% for file in aggregatedassets.header.js %}
     <script type="text/javascript" src="{{file}}"></script>
   {% endfor %}
-
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
