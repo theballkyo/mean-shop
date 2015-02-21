@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -40,3 +41,51 @@
     <![endif]-->
 
 </head>
+=======
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>{{appName}} - {{title}}</title>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta name="keywords" content="node.js, express, mongoose, mongodb, angularjs, swig">
+  <meta name="description" content="MEAN - A Modern Stack: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).">
+
+  <meta property="fb:app_id" content="APP_ID">
+  <meta property="og:title" content="{{appName}} - {{title}}">
+  <meta property="og:description" content="MEAN - A Modern Stack: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="APP_URL">
+  <meta property="og:image" content="APP_LOGO">
+  <meta property="og:site_name" content="MEAN - A Modern Stack">
+  <meta property="fb:admins" content="APP_ADMIN">
+
+  {% for file in aggregatedassets.header.css %}
+    <link rel="stylesheet" href="{{file}}">
+  {% endfor %}
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link href="/system/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/system/assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/system/assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="/system/assets/css/price-range.css" rel="stylesheet">
+  <link href="/system/assets/css/animate.css" rel="stylesheet">
+  <link href="/system/assets/css/main.css" rel="stylesheet">
+  <link href="/system/assets/css/responsive.css" rel="stylesheet">
+  {% for file in aggregatedassets.footer.css %}
+    <link rel="stylesheet" href="{{file}}">
+  {% endfor %}
+
+  {% for file in aggregatedassets.header.js %}
+    <script type="text/javascript" src="{{file}}"></script>
+  {% endfor %}
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <script src="/system/assets/js/jquery.js"></script>
+  <script src="/system/assets/js/bootstrap.min.js"></script>
+  <script src="/system/assets/js/jquery.scrollUp.min.js"></script>
+  <script src="/system/assets/js/price-range.js"></script>
+  <script src="/system/assets/js/jquery.prettyPhoto.js"></script>
+</head>
+>>>>>>> 36b83c3a6441539868020ac522b8c95f55cb45c1

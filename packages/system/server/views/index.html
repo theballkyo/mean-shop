@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'layouts/default.html' %}
 {% block content %}
   
@@ -6,3 +7,13 @@
     window.modules = null;
   </script>
 {% endblock %}
+=======
+{% extends 'layouts/default.html' %}
+{% block content %}
+  
+  <script type="text/javascript">
+    window.user = {{user|json|safe}};
+    window.modules = null;
+  </script>
+{% endblock %}
+>>>>>>> 36b83c3a6441539868020ac522b8c95f55cb45c1
